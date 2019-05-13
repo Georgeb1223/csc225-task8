@@ -1,5 +1,4 @@
-$('button').on("click",function(e){
-    e.preventDefault();
+$('button').on("click",function(){
     axios.get("https://jsonplaceholder.typicode.com/photos")
         .then(function(response){
             var photoHTML = response.data.map(function(photo){
